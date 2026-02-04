@@ -1,4 +1,4 @@
-import AdminDashboard from '../admin_dashboard_commercial';
+import AdminDashboard from './dashboard/commercial/page';
 
 export default function Home() {
   return (
