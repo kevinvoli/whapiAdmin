@@ -1,6 +1,17 @@
-import { Commercants, StatsGlobales, PerformanceData, SourcesClients, HeuresActivite, ProduitsPopulaires } from "@/app/lib/definitions";
+import { Commercial, StatsGlobales, PerformanceData, SourcesClients, HeuresActivite, ProduitsPopulaires, NavigationItem } from "@/app/lib/definitions";
+import { Home, Users, TrendingUp, BarChart3, MessageCircle, Briefcase, FileText } from 'lucide-react';
 
-export const commerciaux: Commercants[] = [
+export const navigationItems: NavigationItem[] = [
+  { id: 'overview', name: 'Vue d\'ensemble', icon: Home, badge: null },
+  { id: 'commerciaux', name: 'Équipe', icon: Users, badge: '5' },
+  { id: 'performance', name: 'Performance', icon: TrendingUp, badge: null },
+  { id: 'analytics', name: 'Analytics', icon: BarChart3, badge: 'NEW' },
+  { id: 'messages', name: 'Messages', icon: MessageCircle, badge: '12' },
+  { id: 'clients', name: 'Clients', icon: Briefcase, badge: null },
+  { id: 'rapports', name: 'Rapports', icon: FileText, badge: null },
+];
+
+export const commerciaux: Commercial[] = [
     {
       id: 1,
       name: 'Kevin',
@@ -274,4 +285,3 @@ export const commerciaux: Commercants[] = [
     { nom: 'Pack Entreprise C', ventes: 28, ca: 560000 },
     { nom: 'Solution Pro D', ventes: 20, ca: 300000 }
   ];
-  

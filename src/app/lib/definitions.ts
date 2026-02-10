@@ -1,5 +1,5 @@
 
-export type Commercants = {
+export type Commercial = {
     id: number;
     name: string;
     avatar: string;
@@ -41,6 +41,18 @@ export type Commercants = {
     tauxOuverture: number;
     dernierLogin: string;
     productivite: number;
+};
+
+export type ViewMode = 'overview' | 'commerciaux' | 'performance' | 'analytics' | 'messages' | 'clients' | 'rapports';
+
+import React from 'react'; // Import React for React.ElementType
+import { Icon } from 'lucide-react';
+
+export type NavigationItem = {
+    id: ViewMode;
+    name: string;
+    icon: React.ElementType; // Use React.ElementType for the icon component type
+    badge: string | null;
 };
 
 export type StatsGlobales = {
